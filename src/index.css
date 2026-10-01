@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF8F5;
+    color: #24150E;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif-luxury {
+    font-family: var(--font-serif);
+    text-wrap: balance;
+  }
+}
+
+/* Custom luxury smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4A47C;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #331E14;
+}
+
+/* Clip-path reveal animations */
+.clip-path-full {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.clip-path-inset {
+  clip-path: inset(0 0 0 0);
+}
+
+/* Luxury magnetic & link styles */
+.luxury-link-underline {
+  position: relative;
+  display: inline-block;
+}
+.luxury-link-underline::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.luxury-link-underline:hover::after {
+  width: 100%;
+}
+

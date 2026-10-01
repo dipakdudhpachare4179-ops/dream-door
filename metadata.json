@@ -1,0 +1,6 @@
+{
+  "name": "Dream Door Properties | Luxury Real Estate",
+  "description": "Curated luxury residences, modern architectural villas, and bespoke property consultation by Dream Door Properties.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
